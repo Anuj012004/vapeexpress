@@ -58,79 +58,151 @@
 					<!-- Section One -->
 <section id="one" class="wrapper style1 special">
     <div class="inner">
-        <header class="major">
-            <h2>💨 You've Tried The Rest, Now Try The Best!</span> 💨</h2>
-            <p>
-                🔥 <strong>Premium vaping products</strong> <br>
-                🌟 <strong>Top-quality e-liquids</strong> <br>
-                🚀 <strong>Latest vape kits</strong> <br>
-                Everything you need to elevate your vaping experience in the heart of Frenchwood and Avenham.
-            </p>
-        </header>
-        
-        <!-- Icons Section -->
-		<!-- <ul class="icons major">
-			<li><span class="icon fas fa-cloud major style1"><span class="label">Vape Clouds</span></span></li>
-			<li><span class="icon fas fa-battery-full major style2"><span class="label">Long-Lasting</span></span></li>
-			<li><span class="icon fas fa-tint major style3"><span class="label">E-Liquids</span></span></li>
-		</ul> -->
+    <header class="major">
+        <h2>💨 You've Tried The Rest, Now Try The Best! 💨</h2>
+        <p>
+            🔥 <strong>Premium vaping products</strong> <br>
+            🌟 <strong>Top-quality e-liquids</strong> <br>
+            🚀 <strong>Latest vape kits</strong> <br>
+            Everything you need to elevate your vaping experience in the heart of Frenchwood and Avenham.
+        </p>
+    </header>
+    
+    <!-- Icons Section -->
+    <ul class="diamond-icons">
+        <li>
+            <div class="diamond-shape diamond-blue">
+                <i class="fas fa-cloud"></i>
+            </div>
+            <span class="diamond-label">Vape Clouds</span>
+        </li>
+        <li>
+            <div class="diamond-shape diamond-green">
+                <i class="fas fa-battery-full"></i>
+            </div>
+            <span class="diamond-label">Long-Lasting</span>
+        </li>
+        <li>
+            <div class="diamond-shape diamond-red">
+                <i class="fas fa-tint"></i>
+            </div>
+            <span class="diamond-label">E-Liquids</span>
+        </li>
+    </ul>
+    
+    <!-- Call to Action -->
+    <ul class="actions special">
+        <li><a href="#products" class="button primary">Browse Products</a></li>
+    </ul>
+</div>
 
-		<style>
-			.icons {
-				display: flex !important;
-				justify-content: center !important;
-				gap: 20px !important;
-				margin-top: 20px !important;
-			}
-	
-			.icons li {
-				list-style: none !important;
-				text-align: center !important;
-			}
-	
-			.major.style1 {
-				color: #3498db !important;
-				font-size: 40px !important;
-			}
-	
-			.major.style2 {
-				color: #2ecc71 !important;
-				font-size: 40px !important;
-			}
-	
-			.major.style3 {
-				color: #e74c3c !important;
-				font-size: 40px !important;
-			}
-	
-			.label {
-				display: block !important;
-				margin-top: 10px !important;
-				font-size: 16px !important;
-			}
+<style>
+    .diamond-icons {
+    display: flex;
+    justify-content: center;
+    gap: 180px;
+    margin: 40px 0;
+    padding: 0;
+    list-style: none;
+}
 
-			.icons .major {
-				background-color: wheat;
-				color: red;
-			}
-		</style>
-	</head>
-	<body>
-		<ul class="icons major">
-			<li><span class="icon fas fa-cloud major style1"><span class="label">Vape Clouds</span></span></li>
-			<li><span class="icon fas fa-battery-full major style2"><span class="label">Long-Lasting</span></span></li>
-			<li><span class="icon fas fa-tint major style3"><span class="label">E-Liquids</span></span></li>
-		</ul>
+.diamond-icons li {
+    text-align: center;
+    position: relative;
+}
 
+.diamond-shape {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(45deg);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    border: 2px solid rgba(255,255,255,0.8);
+    position: relative;
+    overflow: hidden;
+    /* Removed the white gradient background */
+    background: transparent;
+}
 
+.diamond-shape::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent 40%, rgba(255,255,255,0.3) 50%, transparent 60%);
+    transform: rotate(-45deg);
+    animation: diamondShine 3s infinite;
+}
 
-					
-        
-        <!-- Call to Action -->
-        <ul class="actions special">
-            <li><a href="#products" class="button primary">Browse Products</a></li>
-        </ul>
-    </div>
+@keyframes diamondShine {
+    0% { transform: translateX(-100%) rotate(-45deg); }
+    100% { transform: translateX(100%) rotate(-45deg); }
+}
+
+.diamond-shape i {
+    transform: rotate(-45deg);
+    font-size: 48px;
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.2));
+}
+
+.diamond-label {
+    display: block;
+    margin-top: 25px;
+    color: #ffffff;  /* Changed to white for better contrast */
+    font-family: 'Georgia', serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-top: 30px;
+}
+
+/* Updated gradient colors for icons */
+.diamond-blue i {
+    background: linear-gradient(45deg, #ffffff, #e0f7fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.diamond-green i {
+    background: linear-gradient(45deg, #ffffff, #e0f7fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.diamond-red i {
+    background: linear-gradient(45deg, #ffffff, #e0f7fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+    .diamond-icons {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+    
+    .diamond-shape {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .diamond-shape i {
+        font-size: 32px;
+    }
+    
+    .diamond-label {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+}
+</style>
     
     <!-- Background Styling -->
    
